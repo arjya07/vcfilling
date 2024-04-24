@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VC filling - dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="dashboard_header_main">
+      <div class="header_top">
+        <p>
+          Looking for Incfile? We're still here, but with a new name.
+          <a href="#"
+            >Learn More
+            <svg
+              fill="#ffffff"
+              height="10px"
+              width="10px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 330 330"
+              xml:space="preserve"
+              stroke="#ffffff"
+              stroke-width="12.870000000000001"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  id="XMLID_222_"
+                  d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001 c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213 C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606 C255,161.018,253.42,157.202,250.606,154.389z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+        </p>
+      </div>
+      <div class="dashboard_header d-flex justify-space-between">
+        <div class="logo">
+          <img
+            src="image/Vcfiling-01 (1).png"
+            class="img-fluid"
+            alt="VC Filling - Dashboard"
+          />
+          <div class="toggler-btn-dashboard" id="toggler-btn-dashboard">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="header_right_buttons d-flex">
+          <a href="" class="create_new_company">
+            <p>
+              <svg
+                height="18px"
+                width="18px"
+                viewBox="0 0 21.00 21.00"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#ffffff"
+                stroke="#ffffff"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>plus_circle [#ffffff]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke-width="0.33599999999999997"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-259.000000, -600.000000)"
+                      fill="#ffffff"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          d="M214.55,449 L217.7,449 L217.7,451 L214.55,451 L214.55,454 L212.45,454 L212.45,451 L209.3,451 L209.3,449 L212.45,449 L212.45,446 L214.55,446 L214.55,449 Z M213.5,458 C208.86845,458 205.1,454.411 205.1,450 C205.1,445.589 208.86845,442 213.5,442 C218.13155,442 221.9,445.589 221.9,450 C221.9,454.411 218.13155,458 213.5,458 L213.5,458 Z M213.5,440 C207.70085,440 203,444.477 203,450 C203,455.523 207.70085,460 213.5,460 C219.29915,460 224,455.523 224,450 C224,444.477 219.29915,440 213.5,440 L213.5,440 Z"
+                          id="plus_circle-[#ffffff]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              Start a new company
+            </p>
+          </a>
+          <a href="" class="logout_btn">
+            <svg
+              height="18px"
+              width="18px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              stroke="#3b3b3b"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 6.5C2 4.01472 4.01472 2 6.5 2H12C14.2091 2 16 3.79086 16 6V7C16 7.55228 15.5523 8 15 8C14.4477 8 14 7.55228 14 7V6C14 4.89543 13.1046 4 12 4H6.5C5.11929 4 4 5.11929 4 6.5V17.5C4 18.8807 5.11929 20 6.5 20H12C13.1046 20 14 19.1046 14 18V17C14 16.4477 14.4477 16 15 16C15.5523 16 16 16.4477 16 17V18C16 20.2091 14.2091 22 12 22H6.5C4.01472 22 2 19.9853 2 17.5V6.5ZM18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289L22.7071 11.2929C23.0976 11.6834 23.0976 12.3166 22.7071 12.7071L19.7071 15.7071C19.3166 16.0976 18.6834 16.0976 18.2929 15.7071C17.9024 15.3166 17.9024 14.6834 18.2929 14.2929L19.5858 13L11 13C10.4477 13 10 12.5523 10 12C10 11.4477 10.4477 11 11 11L19.5858 11L18.2929 9.70711C17.9024 9.31658 17.9024 8.68342 18.2929 8.29289Z"
+                  fill="#3b3b3b"
+                ></path>
+              </g>
+            </svg>
+            Logout
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="dasboard_section">
+      <div class="dashboard_container">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2 left_sidebar_main">
+              <div class="left_sidebar">
+                <div class="sidebar_profile d-flex">
+                  <div class="toggler_menu_close_btn">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    alt="Profile Image"
+                  />
+                  <p>
+                    Muhammad Zaid Bin Akmal <br /><span
+                      >rahuldas8001@gmail.com</span
+                    >
+                  </p>
+                </div>
+                <div class="left_sidebar_menus">
+                  <ul>
+                    <li class="active">
+                      <a href="#"> <i class="fa fa-gauge"></i> Dashboard </a>
+                    </li>
+                    <li>
+                      <a href="#"> <i class="fa fa-gear"></i> Settings </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-truck-fast"></i> Virtual Mail Box
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-gear"></i> All Orders/Receips
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-10 dashboard_right_sidebar_main">
+              <div class="dashboard_main_content_area">
+                <div class="row mb-5">
+                  <div class="dashboard_company_list">
+                    <div class="dashboard_sec_heading">
+                      <h4>My Company</h4>
+                      <p>View company information and account details</p>
+                    </div>
+                    <table>
+                      <tr>
+                        <th>Company Name</th>
+                        <th>State</th>
+                        <th>Order No.</th>
+                        <th>Email Address</th>
+                        <th>Status</th>
+                      </tr>
+                      <!-- <tr class="datas">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                      </tr> -->
+                      <tr class="not-found">
+                        <td colspan="5">No records found.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="dashboard_services_list">
+                    <div class="dashboard_sec_heading">
+                      <h4>
+                        Order services for your companies not registered with
+                        Bizee
+                      </h4>
+                      <p>We're happy to handle the paperwork for you</p>
+                    </div>
+                    <div class="dasboard_services">
+                      <div class="menu-container">
+                        <div class="menu-filter">
+                          <button data-filter="*">All</button>
+                          <button data-filter=".appetizer">Appetizers</button>
+                          <button data-filter=".main-course">
+                            Main Course
+                          </button>
+                          <button data-filter=".dessert">Desserts</button>
+                        </div>
+
+                        <div class="menu-column">
+                          <div class="menu-item appetizer">
+                            <div class="service_single">
+                              <i class="fa-solid fa-certificate"></i>
+                              <h6>
+                                <a href="#">Certificate of Good Standing</a>
+                              </h6>
+                              <p>
+                                Required by government and private agencies to
+                                validate a company’s status before facilitating
+                                specified transactions.
+                              </p>
+                              <span
+                                >Learn More
+                                <i class="fa-solid fa-arrow-right-long"></i
+                              ></span>
+                            </div>
+                          </div>
+
+                          <div class="menu-item main-course">
+                            <div class="service_single">
+                              <i class="fa-solid fa-globe"></i>
+                              <h6>
+                                <a href="#">Certificate of Good Standing</a>
+                              </h6>
+                              <p>
+                                Required by government and private agencies to
+                                validate a company’s status before facilitating
+                                specified transactions.
+                              </p>
+                              <span
+                                >Learn More
+                                <i class="fa-solid fa-arrow-right-long"></i
+                              ></span>
+                            </div>
+                          </div>
+
+                          <div class="menu-item dessert">
+                            <div class="service_single">
+                              <i class="fa-regular fa-clipboard"></i>
+                              <h6>
+                                <a href="#">Certificate of Good Standing</a>
+                              </h6>
+                              <p>
+                                Required by government and private agencies to
+                                validate a company’s status before facilitating
+                                specified transactions.
+                              </p>
+                              <span
+                                >Learn More
+                                <i class="fa-solid fa-arrow-right-long"></i
+                              ></span>
+                            </div>
+                          </div>
+                          <div class="menu-item dessert">
+                            <div class="service_single">
+                              <i class="fa-solid fa-globe"></i>
+                              <h6>
+                                <a href="#">Certificate of Good Standing</a>
+                              </h6>
+                              <p>
+                                Required by government and private agencies to
+                                validate a company’s status before facilitating
+                                specified transactions.
+                              </p>
+                              <span
+                                >Learn More
+                                <i class="fa-solid fa-arrow-right-long"></i
+                              ></span>
+                            </div>
+                          </div>
+                          <!-- Add more items as needed -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var $grid = $(".menu-column").isotope({
+          itemSelector: ".menu-item",
+          layoutMode: "fitRows",
+        });
+
+        $(".menu-filter button").on("click", function () {
+          var filterValue = $(this).attr("data-filter");
+          $grid.isotope({ filter: filterValue });
+        });
+
+        // Add active class to the current button (highlight it)
+        $(".menu-filter button").on("click", function () {
+          $(this).addClass("active").siblings().removeClass("active");
+        });
+      });
+
+      $(".toggler_menu_close_btn").hide();
+      $("#toggler-btn-dashboard").on("click", function () {
+        $(".left_sidebar_main").addClass("active_dashboard_menu");
+        $(".toggler_menu_close_btn").show();
+      });
+
+      $(".toggler_menu_close_btn").on("click", function () {
+        $(".left_sidebar_main").removeClass("active_dashboard_menu");
+      });
+    </script>
+  </body>
+</html>
